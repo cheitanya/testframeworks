@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression]">
+  <test name="regression(failed)">
+    <classes>
+      <class name="search.SearchProductsTest">
+        <methods>
+          <include name="verifyInvalidProdcutsSearch"/>
+          <include name="verifySearchValidProduct"/>
+          <include name="verifySerachByBrand"/>
+          <include name="verifySerachByCategories"/>
+        </methods>
+      </class> <!-- search.SearchProductsTest -->
+      <class name="login.LoginTest">
+        <methods>
+          <include name="verifyInvalidLogintoSpree"/>
+          <include name="verifyValidLogintoSpree"/>
+          <include name="verifyBeforeSuite"/>
+        </methods>
+      </class> <!-- login.LoginTest -->
+    </classes>
+  </test> <!-- regression(failed) -->
+</suite> <!-- Failed suite [Regression] -->

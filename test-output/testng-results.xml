@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Regression" duration-ms="19" started-at="2016-11-20T06:21:08Z" finished-at="2016-11-20T06:21:08Z">
+    <groups>
+    </groups>
+    <test name="regression" duration-ms="19" started-at="2016-11-20T06:21:08Z" finished-at="2016-11-20T06:21:08Z">
+      <class name="search.SearchProductsTest">
+        <test-method status="PASS" signature="verifyInvalidProdcutsSearch()[pri:0, instance:search.SearchProductsTest@66133adc]" name="verifyInvalidProdcutsSearch" duration-ms="0" started-at="2016-11-20T11:51:08Z" finished-at="2016-11-20T11:51:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidProdcutsSearch -->
+        <test-method status="PASS" signature="verifySearchValidProduct()[pri:0, instance:search.SearchProductsTest@66133adc]" name="verifySearchValidProduct" duration-ms="0" started-at="2016-11-20T11:51:08Z" finished-at="2016-11-20T11:51:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchValidProduct -->
+        <test-method status="PASS" signature="verifySerachByCategories()[pri:0, instance:search.SearchProductsTest@66133adc]" name="verifySerachByCategories" duration-ms="0" started-at="2016-11-20T11:51:08Z" finished-at="2016-11-20T11:51:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySerachByCategories -->
+        <test-method status="PASS" signature="verifySerachByBrand()[pri:0, instance:search.SearchProductsTest@66133adc]" name="verifySerachByBrand" duration-ms="0" started-at="2016-11-20T11:51:08Z" finished-at="2016-11-20T11:51:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySerachByBrand -->
+      </class> <!-- search.SearchProductsTest -->
+      <class name="login.LoginTest">
+        <test-method status="PASS" signature="verifyInvalidLoginIntoSpree()[pri:0, instance:login.LoginTest@449b2d27]" name="verifyInvalidLoginIntoSpree" duration-ms="4" started-at="2016-11-20T11:51:08Z" finished-at="2016-11-20T11:51:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidLoginIntoSpree -->
+        <test-method status="PASS" signature="verifyLoginIntoSpree()[pri:0, instance:login.LoginTest@449b2d27]" name="verifyLoginIntoSpree" duration-ms="0" started-at="2016-11-20T11:51:08Z" finished-at="2016-11-20T11:51:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginIntoSpree -->
+      </class> <!-- login.LoginTest -->
+    </test> <!-- regression -->
+  </suite> <!-- Regression -->
+</testng-results>
