@@ -2,7 +2,7 @@ package login;
 
 import org.testng.Assert;
 import org.testng.annotations.*;
-import steps.LoginSteps;
+import steps.LoginStepsWithPageObject;
 import utili.DriverManager;
 
 /**
@@ -17,36 +17,35 @@ public class LoginTestWithParam {
         DriverManager manager = new DriverManager();
     }
 
-    @DataProvider(name = "login")
-    public static Object[][] loginData() {
-
-        return new Object[][]
-                {{"xt@xt.xom", "xtxtxt"}, {"abc@xt.xom", "xtxtxt"}};
-    }
-
 
     @Test
     @Parameters({"userName", "password"})
     public void verifyValidLogIntoSpree(String userName, String password)
     {
-        LoginSteps loginSteps = new LoginSteps();
+        LoginStepsWithPageObject loginSteps = new LoginStepsWithPageObject();
         String expected_message = loginSteps.Login(userName, password);
         Assert.assertEquals(expected_message, "MY ACCOUNT");
 
     }
 
-    @Test (dataProvider = "login")
-    public void verifyValidLogIntoSpreeWithDataProvider(String userName, String password)
+    @Test
+    @Parameters({"userName", "password"})
+    public void verifyValidLogIntoSpreeTwo(String userName, String password)
     {
-        LoginSteps loginSteps = new LoginSteps();
+        LoginStepsWithPageObject loginSteps = new LoginStepsWithPageObject();
         String expected_message = loginSteps.Login(userName, password);
         Assert.assertEquals(expected_message, "MY ACCOUNT");
+
     }
+
+
+
+
 
    @AfterMethod
    public void logout()
    {
-       LoginSteps loginSteps = new LoginSteps();
+       LoginStepsWithPageObject loginSteps = new LoginStepsWithPageObject();
        loginSteps.logOut();
    }
 }

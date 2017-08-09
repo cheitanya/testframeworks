@@ -1,20 +1,26 @@
 package page_objects;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.FindBy;
+
+
 
 /**
  * Created by shivalis on 11/20/16.
  */
 public class HomePage {
-    @FindBy(how= How.LINK_TEXT, using = "MY ACCOUNT")
+
+
+
+    @FindBy(linkText= "MY ACCOUNT")
     WebElement my_account;
 
-    @FindBy(how= How.ID, using = "link-to-login")
+    @FindBy(id="")
     WebElement login_link;
 
-    @FindBy(how= How.LINK_TEXT, using = "LOGOUT")
+    @FindBy(linkText = "LOGOUT")
     WebElement logout;
 
 

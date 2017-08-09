@@ -10,7 +10,7 @@ public class DataHandlers {
     @DataProvider(name = "login")
     public static Object[][] loginData() {
 
-        return new Object[][] {{"xt@xt.xom", "xtxtxt"}, {"xt@xt.xom", "xtxtxt"}};
+        return new Object[][] {{"xt@xt.com", "xtxtxt"}, {"xt@xt.xom", "xtxtxt"}};
     }
 
 

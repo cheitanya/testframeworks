@@ -1,23 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Regression]">
-  <test name="regression(failed)">
+  <test name="login_tests(failed)">
+    <parameter name="password" value="xtxtxt"/>
+    <parameter name="userName" value="xt@xt.com"/>
     <classes>
-      <class name="search.SearchProductsTest">
+      <class name="login.LoginTestWithParam">
         <methods>
-          <include name="verifyInvalidProdcutsSearch"/>
-          <include name="verifySearchValidProduct"/>
-          <include name="verifySerachByBrand"/>
-          <include name="verifySerachByCategories"/>
-        </methods>
-      </class> <!-- search.SearchProductsTest -->
-      <class name="login.LoginTest">
-        <methods>
-          <include name="verifyInvalidLogintoSpree"/>
-          <include name="verifyValidLogintoSpree"/>
           <include name="verifyBeforeSuite"/>
+          <include name="verifyValidLogIntoSpree"/>
+          <include name="verifyValidLogIntoSpreeWithDataProvider"/>
         </methods>
-      </class> <!-- login.LoginTest -->
+      </class> <!-- login.LoginTestWithParam -->
     </classes>
-  </test> <!-- regression(failed) -->
+  </test> <!-- login_tests(failed) -->
 </suite> <!-- Failed suite [Regression] -->

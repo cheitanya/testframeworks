@@ -10,19 +10,16 @@ import org.openqa.selenium.support.How;
  */
 public class LoginPage {
 
-
-    WebDriver driver;
-
-    @FindBy(how = How.ID, using = "spree_user_email")
+    @FindBy(id= "spree_user_email")
     WebElement user;
 
-    @FindBy(how = How.ID, using = "spree_user_password")
+    @FindBy(id="spree_user_password")
     WebElement password;
 
-    @FindBy(how = How.NAME, using = "commit")
+    @FindBy(name = "commit")
     WebElement submit;
 
-    @FindBy(how = How.XPATH, using = "//*[@id='content']/div[1]")
+    @FindBy(xpath = "//*[@id='content']/div[1]")
     WebElement invalidEmail;
 
     public void enterUsername(String userName)
@@ -30,11 +27,9 @@ public class LoginPage {
         user.sendKeys(userName);
     }
 
-
     public void enterPassword(String password) {
         this.password.sendKeys(password);
     }
-
 
     public void clickSubmit() {
         submit.click();

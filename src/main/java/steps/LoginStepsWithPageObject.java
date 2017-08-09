@@ -8,16 +8,16 @@ import utili.DriverManager;
 /**
  * Created by shivalis on 11/20/16.
  */
-public class LoginSteps {
+public class LoginStepsWithPageObject {
 
     HomePage homePage;
     LoginPage loginPage;
 
 
-    public LoginSteps()
+    public LoginStepsWithPageObject()
     {
-        HomePage homePage = PageFactory.initElements(DriverManager.driver, HomePage.class);
-        LoginPage loginPage = PageFactory.initElements(DriverManager.driver, LoginPage.class);
+         homePage = PageFactory.initElements(DriverManager.driver, HomePage.class);
+         loginPage = PageFactory.initElements(DriverManager.driver, LoginPage.class);
 
     }
 

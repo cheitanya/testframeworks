@@ -3,11 +3,11 @@
 
 <suite name="Regression">
     <test name="login_tests">
-        <parameter name="userName" value="xt1@xt.com"/>
+        <parameter name="userName" value="xt@xt.com"/>
         <parameter name="password" value="xtxtxt" />
 
         <classes>
-            <class name="login.LoginTestWithParam"/>
+            <class name="login.LoginTestWithDataProvider"/>
         </classes>
 
     </test>

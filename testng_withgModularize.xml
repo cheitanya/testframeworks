@@ -3,14 +3,9 @@
 
 <suite name="Regression">
     <test name="login_tests">
-        <groups>
-            <run>
-                <include name="regression" />
-            </run>
-        </groups>
 
         <classes>
-            <class name="login.LoginTestsWithGrouping"/>
+            <class name="login.LoginTestWithModularize"/>
             <class name="search.SearchProductsTest" />
         </classes>
 
